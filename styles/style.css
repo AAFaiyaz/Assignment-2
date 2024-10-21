@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
 * {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -11,15 +12,43 @@
 .primary-color {
   color: #e6533c;
 }
+.btn {
+  padding: 16px 40px;
+  border-radius: 42px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  pointer: cursor;
+}
+.btn-primary {
+  background-color: #e6533c;
+}
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+p {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
 /* Shared Style End */
 
 /* Header Start */
 
 header {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(
-    to bottom,
+    180deg,
     rgb(17, 17, 17),
-    rgba(119, 119, 119, 0)
+    rgba(119, 119, 119, 0) 100%
   );
 }
 
@@ -28,8 +57,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-
   margin: 0 auto;
+  padding-top: 57px;
 }
 .logo {
   font-size: 2.25rem;
@@ -56,7 +85,93 @@ nav {
 .mbl-hamburger {
   display: none;
 }
-/* Navbar End */
+
+/* Banner Start */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 80%;
+  margin: 38px auto 0;
+}
+
+.banner-content {
+  width: 36%;
+}
+.banner-content button:first-of-type {
+  margin-right: 4px;
+}
+.banner-title {
+  font-size: 78px;
+  font-weight: 900;
+  line-height: 120%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 59px;
+}
+
+.banner-title span {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 300;
+}
+.banner-description {
+  margin: 28px 0;
+}
+
+.image-container {
+  position: relative;
+}
+
+.capsule {
+  width: 206px;
+  height: 96px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  padding: 23px;
+}
+
+.red-circle {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-circle img {
+  width: 80%;
+}
+
+.capsule-1 {
+  position: absolute;
+  bottom: 68px;
+  right: 420px;
+  display: flex;
+}
+
+.capsule-2 {
+  position: absolute;
+  bottom: 370px;
+  right: 87px;
+  display: flex;
+}
+
+.capsule-text p:first-child {
+  font-size: 24px;
+  color: white;
+  font-weight: 900;
+  line-height: 24px;
+}
+
+.capsule-text p:last-child {
+  margin-top: 8px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Banner End */
+/* Header End */
 
 /* Mobile View */
 
