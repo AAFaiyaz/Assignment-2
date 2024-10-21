@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: borer-box;
+}
+
+/* Shared Style Start */
+.primary-color {
+  color: #e6533c;
+}
+/* Shared Style End */
+
+/* Header Start */
+
+header {
+  background: linear-gradient(
+    to bottom,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0)
+  );
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+
+  margin: 0 auto;
+}
+.logo {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.navbar {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px;
+  border-radius: 39px;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 8px 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 46px;
+}
+
+.navbar a:hover {
+  background-color: #e6533c;
+}
+
+.mbl-hamburger {
+  display: none;
+}
+/* Navbar End */
+
+/* Mobile View */
+
+@media screen and (max-width: 576px) {
+  /* Navbar Start */
+
+  .navbar {
+    display: none;
+  }
+  .mbl-hamburger {
+    display: block;
+  }
+  /* Navbar End */
+}
