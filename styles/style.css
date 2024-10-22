@@ -8,9 +8,27 @@
   box-sizing: border-box;
 }
 
+.default-bg {
+  background-color: black;
+  color: white;
+}
+
 /* Shared Style Start */
+.banner,
+.habit,
+.extra-mile,
+.bmi-calculator,
+.team,
+.footer {
+  width: 80%;
+  margin: 0 auto;
+}
 .primary-color {
   color: #e6533c;
+}
+
+.text-center {
+  text-align: center;
 }
 .btn {
   padding: 16px 40px;
@@ -45,11 +63,17 @@ p {
 
 header {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  /* background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17) 0%,
+    rgba(119, 119, 119, 0) 100%
+  ); */
   background: linear-gradient(
     180deg,
-    rgb(17, 17, 17),
-    rgba(119, 119, 119, 0) 100%
+    rgb(17, 17, 17) 100%,
+    rgba(119, 119, 119, 0) 24%
   );
+  /* padding-bottom: 20px; */
 }
 
 nav {
@@ -58,7 +82,7 @@ nav {
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  padding-top: 57px;
+  padding-top: 30px;
 }
 .logo {
   font-size: 2.25rem;
@@ -91,7 +115,6 @@ nav {
   display: flex;
   justify-content: space-between;
   color: white;
-  width: 80%;
   margin: 38px auto 0;
 }
 
@@ -173,9 +196,172 @@ nav {
 /* Banner End */
 /* Header End */
 
+/* Main Section Style Start */
+main {
+}
+
+.habit {
+  padding: 100px 0;
+}
+
+section .title {
+  font-size: 48px;
+  font-weight: 900;
+}
+section .description {
+  margin: 14px 0;
+}
+
+.workout {
+  display: flex;
+  margin-top: 40px;
+}
+
+.exercise img {
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.ex-title {
+  margin-bottom: 6px;
+}
+
+/* Extra Mile Start */
+.extra-mile {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  padding: 30px 32px 29px 54px;
+}
+
+.extra-mile-content {
+  width: 40%;
+}
+
+.extra-mile-content button {
+  margin-top: 20px;
+}
+
+.extra-mile-img {
+  width: 30%;
+}
+.extra-mile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+/* Extra Mile End */
+
+/* BMI Start */
+
+/* BMI End */
+/* Main Section Style End */
+.bmi-calculator {
+  padding-top: 78px;
+}
+
+.bmi-calculator .description {
+  padding-bottom: 88px;
+}
+
+.bmi-calculator-chart {
+  background: rgb(34, 34, 34);
+  width: 100%;
+}
+
+.bmi-chart-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 52px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bmi-chart,
+.calculate {
+  width: 45%;
+}
+
+.bmi-chart-title {
+  margin-bottom: 52px;
+}
+
+.bmi-title {
+  font-size: 28px;
+}
+
+th {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  font-weight: 500;
+}
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  text-align: left;
+}
+
+td {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.calculate .description {
+  margin-bottom: 34px;
+}
+
+input,
+select {
+  border-radius: 8px;
+  padding: 12px 40px 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 12px;
+  margin-bottom: 12px;
+  border: none;
+}
+
+/* Style the placeholder text for input fields */
+input::placeholder,
+select {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+select:first-of-type {
+  width: 45%;
+}
+
+select:last-child {
+  width: 93%;
+}
+
+/* Style the default option in select (mimicking placeholder) */
+select option:disabled {
+  color: #999;
+}
+
+.calculate button {
+  margin-top: 34px;
+}
+
 /* Mobile View */
 
 @media screen and (max-width: 576px) {
+  /* Shared styles */
+
+  .banner,
+  .habit,
+  .extra-mile {
+    width: 90%;
+  }
   /* Navbar Start */
   nav {
     width: 85%;
@@ -195,7 +381,6 @@ nav {
   .banner {
     display: flex;
     flex-direction: column;
-    width: 90%;
     margin: 0 20px;
   }
 
@@ -286,4 +471,51 @@ nav {
   }
 
   /* Banner End */
+
+  /* habit */
+  .habit {
+    padding-top: 10px;
+    padding-bottom: 66px;
+  }
+  section .title {
+    font-size: 32px;
+    text-align: left;
+  }
+  section .description {
+    margin: 14px 0;
+    text-align: left;
+  }
+
+  .workout {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .exercise {
+    margin-bottom: 36px;
+  }
+
+  /* Extra Mile Start */
+  .extra-mile {
+    flex-direction: column;
+  }
+
+  .extra-mile-content {
+    width: 100%;
+  }
+
+  .extra-mile-content button {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 31px;
+  }
+
+  .extra-mile-img {
+    width: 100%;
+  }
+  .extra-mile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+  }
+  /* Extra Mile End */
 }
