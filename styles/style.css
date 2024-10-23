@@ -257,7 +257,7 @@ section .description {
 /* BMI Start */
 
 /* BMI End */
-/* Main Section Style End */
+
 .bmi-calculator {
   padding-top: 78px;
 }
@@ -324,7 +324,6 @@ select {
   border: none;
 }
 
-/* Style the placeholder text for input fields */
 input::placeholder,
 select {
   color: rgba(255, 255, 255, 0.6);
@@ -342,16 +341,10 @@ select:first-of-type {
 select:last-child {
   width: 93%;
 }
-
-/* Style the default option in select (mimicking placeholder) */
-select option:disabled {
-  color: #999;
-}
-
 .calculate button {
   margin-top: 34px;
 }
-
+/* Main Section Style End */
 /* Mobile View */
 
 @media screen and (max-width: 576px) {
@@ -359,7 +352,9 @@ select option:disabled {
 
   .banner,
   .habit,
-  .extra-mile {
+  .extra-mile,
+  .bmi-calculator,
+  .bmi-chart-container {
     width: 90%;
   }
   /* Navbar Start */
@@ -518,4 +513,52 @@ select option:disabled {
     border-radius: 18px;
   }
   /* Extra Mile End */
+
+  /* BMI calculator */
+
+  .bmi-calculator {
+    padding-top: 21px;
+  }
+
+  .bmi-calculator .description {
+    padding-bottom: 29px;
+  }
+
+  .bmi-chart-container {
+    margin: 0 auto;
+    padding: 34px 0;
+    flex-direction: column;
+  }
+
+  .bmi-chart,
+  .calculate {
+    width: 100%;
+  }
+
+  .bmi-chart {
+    margin-bottom: 42px;
+  }
+
+  .bmi-chart-title {
+    margin-bottom: 23px;
+  }
+
+  input,
+  select:first-of-type {
+    width: 46%;
+  }
+
+  input::placeholder,
+  select {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  select:last-child {
+    width: 97%;
+  }
 }
