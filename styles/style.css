@@ -344,6 +344,59 @@ select:last-child {
 .calculate button {
   margin-top: 34px;
 }
+
+/* team style start */
+.team {
+  padding: 88px 0;
+}
+
+.team-img-container {
+  margin-top: 44px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.team-member {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 390px;
+  max-height: 272px;
+  height: 100%;
+  border-radius: 18px;
+}
+
+.team-member p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+}
+.team-member h3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 24px;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  font-weight: 800;
+}
+/* team style end */
 /* Main Section Style End */
 /* Mobile View */
 
@@ -354,7 +407,8 @@ select:last-child {
   .habit,
   .extra-mile,
   .bmi-calculator,
-  .bmi-chart-container {
+  .bmi-chart-container,
+  .team {
     width: 90%;
   }
   /* Navbar Start */
@@ -560,5 +614,62 @@ select:last-child {
 
   select:last-child {
     width: 97%;
+  }
+
+  /* team style start */
+  .team {
+    padding: 66px 0;
+  }
+
+  .team .title,
+  .team .description {
+    text-align: center;
+  }
+
+  .team-img-container {
+    margin-top: 44px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+  }
+
+  .team-member {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+  }
+
+  .team-member img {
+    width: 100%;
+    max-width: 390px;
+    max-height: 272px;
+    height: 100%;
+    border-radius: 18px;
+  }
+
+  .team-member p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+  }
+  .team-member h3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    font-weight: 800;
   }
 }
