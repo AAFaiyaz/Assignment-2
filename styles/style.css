@@ -18,8 +18,9 @@
 .habit,
 .extra-mile,
 .bmi-calculator,
+.packages,
 .team,
-.footer {
+.footer-content {
   width: 80%;
   margin: 0 auto;
 }
@@ -345,6 +346,40 @@ select:last-child {
   margin-top: 34px;
 }
 
+/* Packages Start */
+.packages {
+  padding-top: 88px;
+}
+
+.package-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.package {
+  width: 30%;
+  margin-top: 44px;
+  border: 1px solid white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 18px;
+  font-weight: 900;
+}
+
+.premier {
+  background: #e6533c;
+}
+
+.package li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+/* Packages End */
+
 /* team style start */
 .team {
   padding: 88px 0;
@@ -396,7 +431,52 @@ select:last-child {
   width: 100%;
   font-weight: 800;
 }
+
 /* team style end */
+
+/* Footer style strat */
+footer {
+  background: rgb(34, 34, 34);
+  color: white;
+  padding-top: 66px;
+}
+footer .logo {
+  font-style: italic;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: 40% 15% 15%;
+  justify-content: space-between;
+}
+
+.fitness-footer-banner h1 {
+  margin-bottom: 20px;
+}
+hr {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 79px auto 39px;
+
+  width: 80%;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.services h3 {
+  font-size: 32px;
+}
+
+.services a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 23px;
+}
+
+.footer {
+  padding-bottom: 35px;
+}
 /* Main Section Style End */
 /* Mobile View */
 
@@ -408,7 +488,9 @@ select:last-child {
   .extra-mile,
   .bmi-calculator,
   .bmi-chart-container,
-  .team {
+  .packages,
+  .team,
+  .footer-content {
     width: 90%;
   }
   /* Navbar Start */
@@ -616,6 +698,33 @@ select:last-child {
     width: 97%;
   }
 
+  /* Packages Start */
+  .packages {
+    padding-top: 88px;
+  }
+
+  .package-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .package {
+    width: 100%;
+    margin-top: 44px;
+    border: 1px solid white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 18px;
+    font-weight: 900;
+  }
+
+  /* Packages End */
+
   /* team style start */
   .team {
     padding: 66px 0;
@@ -627,49 +736,56 @@ select:last-child {
   }
 
   .team-img-container {
-    margin-top: 44px;
-    padding: 20px;
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.1);
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, auto);
+  }
+
+  /* Footer style strat */
+  footer {
+    padding-top: 44px;
+  }
+
+  footer .logo {
+    margin-left: 5px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 
-  .team-member {
-    position: relative;
-    overflow: hidden;
-    border-radius: 18px;
+  .fitness-footer-banner h1,
+  .fitness-footer-banner p {
+    margin-bottom: 20px;
+  }
+  hr {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 52px auto 39px;
+    width: 90%;
   }
 
-  .team-member img {
-    width: 100%;
-    max-width: 390px;
-    max-height: 272px;
-    height: 100%;
-    border-radius: 18px;
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
   }
 
-  .team-member p {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  .services h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .services a {
     color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    margin: 0;
-    width: 100%;
+    font-size: 23px;
   }
-  .team-member h3 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 24px;
-    color: white;
-    padding: 10px;
-    margin: 0;
-    width: 100%;
-    font-weight: 800;
+
+  .footer {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    text-align: left;
   }
 }
